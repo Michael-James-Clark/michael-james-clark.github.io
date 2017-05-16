@@ -57,10 +57,10 @@ nav li a {
 }
 @media only screen and (min-width : 1200px) {
     body {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     #skills {
-        margin-top: 150px;
+        margin-top: 200px;
     }
     .tab-content {
         margin-top: 50px;
