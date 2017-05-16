@@ -1,21 +1,36 @@
-body {
-    background-color: #ECF0F1; 
-    font-family: 'Open Sans', sans-serif !important;   
+html, body {
+    background-color: #24252D !important;
+    font-family: 'Roboto Mono', monospace!important;
+    color: #CACACC !important;
 }
-#header {
-    /* The image used */
-    background-color: #95A5A6;
-    min-height: 400px;
-    max-height: 500px;
+.head {
+    font-weight: 400;
+    font-size: 2em;
+}
+.sub {
+    margin: 0 0 .5em 0;
+    color: #696A6F;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+nav .nav-tabs{
+    border-color: #363843;
+}
+nav li a {
+    color: yellow;
+}
 
+#skills {
+    margin: 5em 0 0 2em;
 }
-nav a{ 
-    color: #ECF0F1;
+#skills p {
+    font-size: 0.8em;
+    color: #696A6F;
 }
-.keyboard_image {
-    max-width: 45%;
-    height: auto;
-    width: auto;
-    margin: 40px auto;
-    display: block;
+#skills i {
+    color: #f0f0f0;
+    font-size: 500% !important;
+}
+#menu2 {
+    margin-top: 50px;
 }

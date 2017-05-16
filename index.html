@@ -1,52 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Clark</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="public/dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="public/dist/css/flat-ui.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"
-  </head>
-  <body>
-    <section id="header">
-        <div class="container">
-            <nav>
-                <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Michael Clark</a>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="head">Michael Clark</h1>
+            <h2 class="sub">A Web Developer in Kingston Upon Hull</h2>
+        </header>
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Michael</a></li>
+                <li><a data-toggle="tab" href="#menu1">Portfolio</a></li>
+                <li><a data-toggle="tab" href="#menu2">Contact</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>About Me:</h3>
+                    <p>Hi there, I'm Michael Clark, a 19 year old web developer from Kingston Upon Hull who loves all things
+                        tech. With a strong love of computers behind me, I went on a journey to teach myself how to create
+                        websites, and while I have come along way the journey isn't quite over. I specialize in the MEAN
+                        stack and hope to become a professional full stack developer.
+                    </p>
+                    <section id="skills" class="text-center">
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <td><i class="fa fa-html5"></i></td>
+                                <h3>HTML5/CSS
+                                    <h3>
+                                        <p>I'm capable of writing elegant semantic HTML by keeping up with the latest revisions
+                                            and standards.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <td><i class="fa fa-bolt"></i></td>
+                                <h3 class="text-center">Angular/React
+                                    <h3>
+                                        <p>I have experience with a multitude of frameworks but specialize in Angular and React.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <td><i class="fa fa-cog"></i></td>
+                                <h3 class="text-center">NodeJS
+                                    <h3>
+                                        <p>I utilize NodeJS to write my backend code and follow best practices to execute code
+                                            at blistering speeds.</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-                </div><!--/.container-fluid -->
-            </nav>
-        </div>
-        <img class="keyboard_image"src="public/images/keyboard.png" alt="keyboard">
-    </section>
-    <section id="skills">
-        <div class="container">
-        
-        </div>
-    </section>
+
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1.</p>
+                </div>
+
+                <div id="menu2" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                                <form class="form-horizontal" method="POST" action="http://formspree.io/jclockz@outlook.com">
+                                    <fieldset>
+
+                                        <!-- Email input-->
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                                            <div class="col-md-9">
+                                                <input id="email" name="email" type="email" placeholder="Your email" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <!-- Message body -->
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="message">Your message</label>
+                                            <div class="col-md-9">
+                                                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <!-- Form actions -->
+                                        <div class="form-group">
+                                            <div class="col-md-12 text-right">
+                                                <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                        </div>
+                    </div>
+                </div>
 
 
-    <script src="public/dist/js/vendor/jquery.min.js"></script>
-    <script src="public/dist/js/vendor/video.js"></script>
-    <script src="public/dist/js/flat-ui.min.js"></script>
 
-  </body>
+            </div>
+        </nav>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
