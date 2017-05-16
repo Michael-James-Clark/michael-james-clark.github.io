@@ -1,0 +1,21 @@
+body {
+    background-color: #ECF0F1; 
+    font-family: 'Open Sans', sans-serif !important;   
+}
+#header {
+    /* The image used */
+    background-color: #95A5A6;
+    min-height: 400px;
+    max-height: 500px;
+
+}
+nav a{ 
+    color: #ECF0F1;
+}
+.keyboard_image {
+    max-width: 45%;
+    height: auto;
+    width: auto;
+    margin: 40px auto;
+    display: block;
+}
